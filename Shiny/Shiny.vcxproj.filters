@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Model">
+      <UniqueIdentifier>{541d053d-cd53-405f-93dd-848333ff2327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Entity">
+      <UniqueIdentifier>{18bcfa6f-eede-4544-a9d8-b10de6a1435c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderEngine">
+      <UniqueIdentifier>{4689d717-0ed5-45f9-a3ea-f4649ae3bd6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{1c98dbd5-ee4f-4dbe-86ed-7bad58ebd797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Terrains">
+      <UniqueIdentifier>{e26a568c-e13e-480f-9cd4-69eaf60fb469}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{fa23309c-2956-4c55-a2e2-71942e885422}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entity\Camera.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Entity.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Light.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity\Player.cpp">
+      <Filter>Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\ObjLoader.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\PBRMaterial.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Model\RawModel.cpp">
+      <Filter>Model</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\PerlinNoise.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrains\HeightsGenerator.cpp">
+      <Filter>Terrains</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrains\MapGenerator.cpp">
+      <Filter>Terrains</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrains\Noise.cpp">
+      <Filter>Terrains</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrains\Terrain.cpp">
+      <Filter>Terrains</Filter>
+    </ClCompile>
+    <ClCompile Include="Terrains\TerrainChunk.cpp">
+      <Filter>Terrains</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\Display.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\EntityRenderer.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\Input.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\Loader.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\PerformanceTimer.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\RenderingSystem.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\ShaderProgram.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\StaticShader.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\TerrainRenderer.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\TerrainShader.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entity\Camera.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Entity.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Light.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity\Player.h">
+      <Filter>Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\AnimatedModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\ObjLoader.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\PBRMaterial.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Model\RawModel.h">
+      <Filter>Model</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\PerlinNoise.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ShinyMath.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrains\HeightsGenerator.h">
+      <Filter>Terrains</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrains\MapGenerator.h">
+      <Filter>Terrains</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrains\Noise.h">
+      <Filter>Terrains</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrains\Terrain.h">
+      <Filter>Terrains</Filter>
+    </ClInclude>
+    <ClInclude Include="Terrains\TerrainChunk.h">
+      <Filter>Terrains</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\Display.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\EntityRenderer.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\Input.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\Loader.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\PerformanceTimer.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\RenderingSystem.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\ShaderProgram.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\StaticShader.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\TerrainRenderer.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\TerrainShader.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="opengl.h" />
+    <ClInclude Include="Shiny.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shader\pbr.frag.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\pbr.vert.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\simple.frag.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\simple.vert.glsl">
+      <Filter>Shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
