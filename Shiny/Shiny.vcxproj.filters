@@ -91,6 +91,18 @@
       <Filter>RenderEngine</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RenderEngine\PBRShader.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\DepthShader.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\ScreenShader.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderEngine\LightCullingProgram.cpp">
+      <Filter>RenderEngine</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Entity\Camera.h">
@@ -170,6 +182,18 @@
     </ClInclude>
     <ClInclude Include="opengl.h" />
     <ClInclude Include="Shiny.h" />
+    <ClInclude Include="RenderEngine\PBRShader.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\DepthShader.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\ScreenShader.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderEngine\LightCullingProgram.h">
+      <Filter>RenderEngine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Shader\pbr.frag.glsl">
@@ -182,6 +206,21 @@
       <Filter>Shader</Filter>
     </None>
     <None Include="Shader\simple.vert.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\depth.frag.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\depth.vert.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\quad2d.vert.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\screen.frag.glsl">
+      <Filter>Shader</Filter>
+    </None>
+    <None Include="Shader\lightCulling.comp.glsl">
       <Filter>Shader</Filter>
     </None>
   </ItemGroup>

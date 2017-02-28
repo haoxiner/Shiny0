@@ -153,12 +153,16 @@
     <ClCompile Include="Model\ObjLoader.cpp" />
     <ClCompile Include="Model\PBRMaterial.cpp" />
     <ClCompile Include="Model\RawModel.cpp" />
+    <ClCompile Include="RenderEngine\DepthShader.cpp" />
     <ClCompile Include="RenderEngine\Display.cpp" />
     <ClCompile Include="RenderEngine\EntityRenderer.cpp" />
     <ClCompile Include="RenderEngine\Input.cpp" />
+    <ClCompile Include="RenderEngine\LightCullingProgram.cpp" />
     <ClCompile Include="RenderEngine\Loader.cpp" />
+    <ClCompile Include="RenderEngine\PBRShader.cpp" />
     <ClCompile Include="RenderEngine\PerformanceTimer.cpp" />
     <ClCompile Include="RenderEngine\RenderingSystem.cpp" />
+    <ClCompile Include="RenderEngine\ScreenShader.cpp" />
     <ClCompile Include="RenderEngine\ShaderProgram.cpp" />
     <ClCompile Include="RenderEngine\StaticShader.cpp" />
     <ClCompile Include="RenderEngine\TerrainRenderer.cpp">
@@ -194,12 +198,16 @@
     <ClInclude Include="Model\PBRMaterial.h" />
     <ClInclude Include="Model\RawModel.h" />
     <ClInclude Include="opengl.h" />
+    <ClInclude Include="RenderEngine\DepthShader.h" />
     <ClInclude Include="RenderEngine\Display.h" />
     <ClInclude Include="RenderEngine\EntityRenderer.h" />
     <ClInclude Include="RenderEngine\Input.h" />
+    <ClInclude Include="RenderEngine\LightCullingProgram.h" />
     <ClInclude Include="RenderEngine\Loader.h" />
+    <ClInclude Include="RenderEngine\PBRShader.h" />
     <ClInclude Include="RenderEngine\PerformanceTimer.h" />
     <ClInclude Include="RenderEngine\RenderingSystem.h" />
+    <ClInclude Include="RenderEngine\ScreenShader.h" />
     <ClInclude Include="RenderEngine\ShaderProgram.h" />
     <ClInclude Include="RenderEngine\StaticShader.h" />
     <ClInclude Include="RenderEngine\TerrainRenderer.h">
@@ -228,8 +236,13 @@
     <ClInclude Include="Utils\ShinyMath.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Shader\depth.frag.glsl" />
+    <None Include="Shader\depth.vert.glsl" />
+    <None Include="Shader\lightCulling.comp.glsl" />
     <None Include="Shader\pbr.frag.glsl" />
     <None Include="Shader\pbr.vert.glsl" />
+    <None Include="Shader\quad2d.vert.glsl" />
+    <None Include="Shader\screen.frag.glsl" />
     <None Include="Shader\simple.frag.glsl" />
     <None Include="Shader\simple.vert.glsl" />
   </ItemGroup>

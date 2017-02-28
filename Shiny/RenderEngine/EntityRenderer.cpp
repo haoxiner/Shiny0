@@ -16,14 +16,14 @@ void shiny::EntityRenderer::Render(std::vector<const Entity*> &entities) {
 		auto model = entity->rawModel_;
 		auto material = entity->material_;
 		glBindVertexArray(model->GetVAO());
-		glActiveTexture(GL_TEXTURE0);
+		/*glActiveTexture(GL_TEXTURE0);
 		glBindTexture(GL_TEXTURE_2D, material->GetAlbedoMap());
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, material->GetMetallicMap());
 		glActiveTexture(GL_TEXTURE2);
 		glBindTexture(GL_TEXTURE_2D, material->GetRoughnessMap());
 		glActiveTexture(GL_TEXTURE3);
-		glBindTexture(GL_TEXTURE_2D, material->GetNormalMap());
+		glBindTexture(GL_TEXTURE_2D, material->GetNormalMap());*/
         PrepareInstance(*entity);
         glDrawElements(GL_TRIANGLES, model->GetIndicesCount(), GL_UNSIGNED_INT, (void*)0);
 		glBindTexture(GL_TEXTURE_2D, 0);

@@ -1,6 +1,8 @@
-#version 400 core
+#version 330 core
 
 uniform sampler2D albedoMap;
+uniform sampler2D metallicMap;
+uniform sampler2D roughnessMap;
 uniform sampler2D normalMap;
 uniform vec3 lightPosition;
 uniform vec3 lightColor;
@@ -21,5 +23,5 @@ void main() {
     vec3 h = normalize(l + v);
     float DotNH = max(0, dot(n, h));
     float DotNL = max(0, dot(n, l));
-    fragColor = (0.4 + DotNL * 0.3 + pow(DotNH, 100.0) * 0.3) * vec4(lightColor, 1.0) * texture(albedoMap, vertexOut.texCoord) * texture(normalMap, vertexOut.texCoord);
+    fragColor = (0.4 + DotNL * 0.3 + pow(DotNH, 100.0) * 0.3) * vec4(lightColor, 1.0) * texture(normalMap, vertexOut.texCoord);
 }
